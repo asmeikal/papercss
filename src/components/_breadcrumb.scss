@@ -1,28 +1,30 @@
-ul.breadcrumb {
-  list-style: none;
-  padding: 10px 16px;
+.paper-like {
+  ul.breadcrumb {
+    list-style: none;
+    padding: 10px 16px;
 
-  li {
-    display: inline;
-    font-size: 20px;
+    li {
+      display: inline;
+      font-size: 20px;
 
-    &::before {
-      content: '';
-    }
+      &::before {
+        content: '';
+      }
 
-    a {
-      @include color('color', 'secondary');
-      background-image: none;
-      text-decoration: none;
+      a {
+        @include color('color', 'secondary');
+        background-image: none;
+        text-decoration: none;
 
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
-  }
 
-  li + li::before {
-    content: '/\00a0';
-    padding: 8px;
+    li + li::before {
+      content: '/\00a0';
+      padding: 8px;
+    }
   }
 }

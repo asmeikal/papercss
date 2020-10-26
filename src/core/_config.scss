@@ -2,9 +2,6 @@
   Global PaperCSS Config
 */
 
-// Imports
-@import url('https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC');
-
 // Set theme colors
 $primary: #41403e !default;
 $secondary: #0071de !default;
@@ -278,8 +275,8 @@ $colors: (primary, $primary, $primary-light, $primary-text),
 
 // Font settings
 $global-font-size: 20px !default;
-$header-font: 'Patrick Hand SC' !default;
-$body-font: 'Neucha' !default;
+$header-font: initial;
+$body-font: initial;
 $font-color: $primary !default;
 
 // Responsive breakpoints

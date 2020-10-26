@@ -1,29 +1,31 @@
-.shadow {
-  @include shadow();
+.paper-like {
+  .shadow {
+    @include shadow();
 
-  &.shadow-large {
-    @include shadow(large);
+    &.shadow-large {
+      @include shadow(large);
+    }
+
+    &.shadow-small {
+      @include shadow(small);
+    }
+
+    &.shadow-hover {
+      &:hover {
+        @include shadow(hover);
+      }
+    }
   }
 
-  &.shadow-small {
-    @include shadow(small);
+  .child-shadows > * {
+    @include shadow();
   }
 
-  &.shadow-hover {
+  .child-shadows-hover > * {
+    @include shadow();
+
     &:hover {
       @include shadow(hover);
     }
-  }
-}
-
-.child-shadows > * {
-  @include shadow();
-}
-
-.child-shadows-hover > * {
-  @include shadow();
-
-  &:hover {
-    @include shadow(hover);
   }
 }
