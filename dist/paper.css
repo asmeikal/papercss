@@ -3,6 +3,7 @@
 /**
   Global PaperCSS Config
 */
+@import url("https://fonts.googleapis.com/css?family=Neucha|Patrick+Hand+SC");
 html {
   --primary: #41403e;
   --secondary: #0071de;
@@ -336,7 +337,6 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -892,7 +892,7 @@ html {
 .paper-like html {
   color: #41403e;
   color: var(--primary);
-  font-family: initial, sans-serif;
+  font-family: "Neucha", sans-serif;
   font-size: 20px;
 }
 .paper-like p,
@@ -908,7 +908,7 @@ html {
 .paper-like textarea,
 .paper-like select,
 .paper-like option {
-  font-family: initial, sans-serif;
+  font-family: "Neucha", sans-serif;
 }
 .paper-like h1,
 .paper-like h2,
@@ -916,7 +916,7 @@ html {
 .paper-like h4,
 .paper-like h5,
 .paper-like h6 {
-  font-family: initial, sans-serif;
+  font-family: "Patrick Hand SC", sans-serif;
   font-weight: normal;
 }
 .paper-like h1 {
